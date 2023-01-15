@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/apodDetailsFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.apod.ApodDetailsFragment"
+        android:label="ApodDetailsFragment"
+        tools:layout="@layout/fragment_apod_details">
+        <action
+            android:id="@+id/action_apodDetailsFragment_to_imageViewFragment"
+            app:destination="@id/imageViewFragment" />
+        <action
+            android:id="@+id/action_apodDetailsFragment_to_videoViewFragment"
+            app:destination="@id/videoViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageViewFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.ImageViewFragment"
+        android:label="ImageViewFragment"
+        tools:layout="@layout/fragment_image_view" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_apodDetailsFragment"
+            app:destination="@id/apodDetailsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_neoWsListFragment"
+            app:destination="@id/neoWsListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_marsRoverMenuFragment"
+            app:destination="@id/marsRoverMenuFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_nasaImagesListFragment"
+            app:destination="@id/nasaImagesListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_favouritesListFragment"
+            app:destination="@id/favouritesListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/neoWsListFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.neows.NeoWsListFragment"
+        android:label="NeoWsListFragment"
+        tools:layout="@layout/fragment_neo_ws_list" >
+        <action
+            android:id="@+id/action_neoWsListFragment_to_neoWsDetailsFragment"
+            app:destination="@id/neoWsDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/neoWsDetailsFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.neows.NeoWsDetailsFragment"
+        android:label="NeoWsDetailsFragment"
+        tools:layout="@layout/fragment_apod_details" />
+    <fragment
+        android:id="@+id/marsRoverMenuFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.marsrover.MarsRoverMenuFragment"
+        android:label="MarsRoverMenuFragment"
+        tools:layout="@layout/fragment_mars_rover_menu" >
+        <action
+            android:id="@+id/action_marsRoverMenuFragment_to_marsRoverDetailsFragment"
+            app:destination="@id/marsRoverDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/marsRoverDetailsFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.marsrover.MarsRoverDetailsFragment"
+        android:label="MarsRoverDetailsFragment" >
+        <action
+            android:id="@+id/action_marsRoverDetailsFragment_to_imageViewFragment"
+            app:destination="@id/imageViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nasaImagesListFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.image.NasaImagesListFragment"
+        android:label="NasaImagesListFragment" >
+        <action
+            android:id="@+id/action_nasaImagesListFragment_to_nasaImagesDetailsFragment"
+            app:destination="@id/nasaImagesDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nasaImagesDetailsFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.image.NasaImagesDetailsFragment"
+        android:label="NasaImagesDetailsFragment" >
+        <action
+            android:id="@+id/action_nasaImagesDetailsFragment_to_imageViewFragment"
+            app:destination="@id/imageViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouritesListFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.favourites.FavouritesListFragment"
+        android:label="FavouritesListFragment" >
+        <action
+            android:id="@+id/action_favouritesListFragment_to_favouritesDetailsFragment"
+            app:destination="@id/favouritesDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouritesDetailsFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.favourites.FavouritesDetailsFragment"
+        android:label="FavouritesDetailsFragment" >
+        <action
+            android:id="@+id/action_favouritesDetailsFragment_to_imageViewFragment"
+            app:destination="@id/imageViewFragment" />
+        <action
+            android:id="@+id/action_favouritesDetailsFragment_to_videoViewFragment"
+            app:destination="@id/videoViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoViewFragment"
+        android:name="hu.bme.aut.android.spaceinspector.view.VideoViewFragment"
+        android:label="VideoViewFragment" />
+</navigation>

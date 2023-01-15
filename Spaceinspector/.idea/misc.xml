@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/fragment_apod_details.xml" value="0.22" />
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/fragment_image_view.xml" value="0.17222222222222222" />
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/fragment_mars_rover_details.xml" value="0.18489583333333334" />
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/fragment_mars_rover_menu.xml" value="0.14666666666666667" />
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/fragment_menu.xml" value="0.17603850050658562" />
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/fragment_neo_ws_details.xml" value="0.17654508611955422" />
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/fragment_neo_ws_list.xml" value="0.17654508611955422" />
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/row_approach_item.xml" value="0.34103260869565216" />
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/row_asteroid_item.xml" value="0.17603850050658562" />
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/row_mars_rover_menu_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/BME/5_felev/Android/HF/Spaceinspector/app/src/main/res/layout/row_rover_image_item.xml" value="0.1517094017094017" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
